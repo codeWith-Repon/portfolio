@@ -1,38 +1,3 @@
-### global.css
-
-```yaml
-@import 'tailwindcss';
-
-@theme {
-  --color-darkHover: #2a004a;
-  --color-lightHover: #fcf4ff;
-  --color-darkTheme: #11001f;
-
-  --font-Outfit: 'Outfit, sans-serif';
-  --font-Ovo: 'Ovo, serif';
-
-  /* 👇 Custom shadows */
-  --shadow-black: 4px 4px 0 #000;
-  --shadow-white: 4px 4px 0 #fff;
-
-  --grid-auto: repeat(auto-fit, minmax(200px, 1fr));
-}
-
-@layer utilities {
-  .grid-cols-auto {
-    grid-template-columns: var(--grid-auto);
-  }
-}
-
-* {
-  font-family: var(--font-Outfit);
-}
-
-```
-
-### work.jsx
-
-```bash
 import { assets, workData } from '@/assets/assets';
 import Image from 'next/image';
 import React from 'react';
@@ -56,8 +21,8 @@ const Work = () => {
             style={{ backgroundImage: `url(${project.bgImage})` }}
           >
             <div
-              className='bg-white w-10/12 rounded-md absolute bottom-5 left-1/2
-                   -translate-x-1/2 py-3 px-5 flex items-center justify-between
+              className='bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 
+                   -translate-x-1/2 py-3 px-5 flex items-center justify-between 
                    duration-500 group-hover:bottom-7'
             >
               <div>
@@ -73,8 +38,8 @@ const Work = () => {
       </div>
       <a
         href=''
-        className='w-max flex items-center justify-center gap-2
-           text-gray-700 border-[0.5px] border-gray-700
+        className='w-max flex items-center justify-center gap-2 
+           text-gray-700 border-[0.5px] border-gray-700 
            rounded-full py-3 px-10 mx-auto my-20 hover:bg-lightHover duration-500'
       >
         Show more{' '}
@@ -89,7 +54,3 @@ const Work = () => {
 };
 
 export default Work;
-
-```
-
-
