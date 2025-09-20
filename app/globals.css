@@ -1,5 +1,8 @@
 @import 'tailwindcss';
 
+/* @config {
+  darkMode: "selector";
+} */
 @theme {
   --color-darkHover: #2a004a;
   --color-lightHover: #fcf4ff;
@@ -20,7 +23,7 @@
     grid-template-columns: var(--grid-auto);
   }
 }
-
+@custom-variant dark (&:where(.dark, .dark *));
 * {
   font-family: var(--font-Outfit);
 }
